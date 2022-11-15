@@ -37,8 +37,8 @@ const goldPotsEls = {
 const button = document.querySelector('#start');
 button.addEventListener('click', playSlot);
 
-const button2 = document.querySelector('#restart');
-button2.addEventListener('click', init);
+const restartButton = document.querySelector('#restart');
+restartButton.addEventListener('click', init);
 
 function playSlot(e){
     console.log('button is working');
@@ -47,10 +47,12 @@ function playSlot(e){
     potOfGold3.innerText = getRandomItems();
 
     if (goldPots.potOfGold1 === goldPots.potOfGold2 && goldPots.potOfGold3 === goldPots.potOfGold1) {
+            result = "Winner of Me Coins"
             numbers.attempts +=1;
             console.log('WINNER OF ME COINS')
-    } else if (goldPots.potOfGold1 !== goldPots.potOfGold2 && goldPots.potOfGold3 !== goldPots.potOfGold1) {
+    } else {
         numbers.attempts +=1;
+        result = 'TRY AGAIN!'
         console.log('TRY AGAIN!')
     }
 
@@ -68,7 +70,6 @@ let tryAgain;
 
 init(); // this will set the initial when the page loads 
 function init (){
-    
     numbers = {
         attempts: 0,
     };
@@ -82,6 +83,7 @@ function init (){
     tryAgain = {
         attempts: 0,
     };
+    
 }
 
 // then you have to create a render function after init function

@@ -13,7 +13,6 @@ const luckRulesLookUp = {
         image: '🥇',
         triple: 'wins'
     }
-
 }
 const potsOfGold = document.querySelectorAll('.potOfGold');
 

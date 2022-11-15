@@ -1,19 +1,21 @@
 body {
   width: 100vw;
-  height: 100 vh;
+  height: 100vh;
   margin: 0;
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   background-color: black;
   color: green;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   }
   
   h2 {
     color: white;
   }
   
-  #game {
+  #potsOfGold {
     height: 100%;
     width: 100%;
     /* background: green; */
@@ -23,7 +25,7 @@ body {
     align-items: center;
   }
   
-  .potOfGolds {
+  .potsOfGold {
     display: flex;
   }
   
@@ -35,6 +37,8 @@ body {
     margin: 50px;
     border-radius: 20px;
     align-items: center;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
   }
   
   button {
@@ -43,3 +47,44 @@ body {
     border-radius: 5px;
     border-color: green;
   }
+main {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+#pot1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  height: 250px;
+  width: 150px;
+}
+#pot1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  height: 250px;
+  width: 150px;
+}
+
+#pot2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  height: 250px;
+  width: 150px;
+}
+
+#pot3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  height: 250px;
+  width: 150px;
+}

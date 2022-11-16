@@ -5,48 +5,47 @@ body {
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  background-color: black;
+  background-color: white;
+  color: black;
+  }
+  
+h2, h3 {
   color: green;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  }
+}
+
+#potsOfGold {
+  height: 100%;
+  width: 100%;
+  background: green;
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+}
   
-  h2, h3 {
-    color: white;
-  }
+.potsOfGold {
+   display: flex;
+}
+
+.potOfGold {
+  display: flex;
+  height: 100px;
+  background:white;
+  width: 100px;
+  margin: 50px;
+  border-radius: 20px;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+  color: red;
+}
   
-  #potsOfGold {
-    height: 100%;
-    width: 100%;
-    background: green;
-    display: flex;
-    flex-direction: row; 
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .potsOfGold {
-    display: flex;
-  }
-  
-  .potOfGold {
-    display: flex;
-    height: 100px;
-    background:white;
-    width: 100px;
-    margin: 50px;
-    border-radius: 20px;
-    align-items: center;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-  }
-  
-  button {
-    font-style: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border-color: green;
-  }
+button {
+  font-style: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+   border-color: green;
+}
+
 main {
  display: flex;
  flex-direction: column;
@@ -54,37 +53,3 @@ main {
  align-items: center;
 }
 
-#pot1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  height: 250px;
-  width: 150px;
-}
-#pot1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  height: 250px;
-  width: 150px;
-}
-
-#pot2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  height: 250px;
-  width: 150px;
-}
-
-#pot3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  height: 250px;
-  width: 150px;
-}

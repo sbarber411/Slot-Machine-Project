@@ -2,10 +2,12 @@
 // use this to select the values that will change every time they play
 const items = ['🍀', '🌈', '🥇'];
 
+
+// CACHE ELS (ELEMENTS)
 const numbersEls = {
 	attempts: document.querySelector('#a-score'), 
+    message: document.querySelector('#message'),
 }
-
 // use this to select all of the boxes
 const goldPotsEls = {
     potOfGold1: document.querySelector('#potOfGold1'),
@@ -33,11 +35,12 @@ function playSlot(e){
     if ((potOfGold.potOfGold1 === potOfGold.potOfGold2) && (potOfGold.potOfGold3 === potOfGold.potOfGold1) && (potOfGold.potOfGold2 === potOfGold.potOfGold3)) {
         numbers.attempts +=1;
         console.log('WINNER OF ME COINS')
+        numbers.message = "You WON Me Coins!"
         
             } else {
                 numbers.attempts +=1;
                 console.log('TRY AGAIN!')
-                
+                numbers.message = "Try Again!"
     }
     render();
 }
@@ -45,7 +48,7 @@ function playSlot(e){
 // then you have to define your variables so you can keep track of score, # times played
 let numbers;
 let potOfGold;
-let tryAgain
+
 
 //init function should be called when the page loads
 // or when we want to reset the game
@@ -54,13 +57,13 @@ init(); // this will set the initial when the page loads
 function init (){
     numbers = {
         attempts: 0,
-        message: "" 
+        message: "",
     };
 
     potOfGold = {
-        potOfGold1: '1',
-        potOfGold2: '2',
-        potOfGold3: '3'
+        potOfGold1: '❓',
+        potOfGold2: '❓',
+        potOfGold3: '❓'
     };
 
     render();
@@ -72,6 +75,9 @@ function render (){
     numbersEls.message.innerText = numbers.message
     numbersEls.attempts.innerText = numbers.attempts
 
+    goldPotsEls.potOfGold1.innerText = potOfGold.potOfGold1
+    goldPotsEls.potOfGold2.innerText = potOfGold.potOfGold2
+    goldPotsEls.potOfGold3.innerText = potOfGold.potOfGold3
 
 
     // for ... in loop allows to loop over an object

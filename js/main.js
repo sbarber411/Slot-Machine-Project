@@ -11,24 +11,27 @@ const numbersEls = {
 }
 
 // Cache Elements, gotPotsEls is my object and potOfGold1/2/3 are my keys
-// These are the elements that will update in 
+// These are the elements that will update on my HTML
 const goldPotsEls = {
     potOfGold1: document.querySelector('#potOfGold1'),
     potOfGold2: document.querySelector('#potOfGold2'),
     potOfGold3: document.querySelector('#potOfGold3')
 }
 
+// this is my random function that will randomly choose 3 items from my array to display on my html
 function getRandomItems(){
 	const randomItems = [Math.floor(Math.random() * 3)];
 	return items[randomItems]
 }
+
+// I will use this to select my buttons and allow the buttons to click
 const button = document.querySelector('#start');
 button.addEventListener('click', playSlot);
 
 const restartButton = document.querySelector('#restart');
 restartButton.addEventListener('click', init);
 
-
+// function that will allow the game to play and decide what message will show is someone wins/loses
 function playSlot(e){
     potOfGold.potOfGold1 = getRandomItems();
     potOfGold.potOfGold2 = getRandomItems();
@@ -48,7 +51,7 @@ function playSlot(e){
     render();
 }
 
-// then you have to define your variables so you can keep track of score, # times played
+// then you have to define your variables so you can keep track of score, # times played and control the emohis shown
 let numbers;
 let potOfGold;
 
@@ -81,11 +84,4 @@ function render (){
     goldPotsEls.potOfGold1.innerText = potOfGold.potOfGold1
     goldPotsEls.potOfGold2.innerText = potOfGold.potOfGold2
     goldPotsEls.potOfGold3.innerText = potOfGold.potOfGold3
-
-
-    // for ... in loop allows to loop over an object
-    // more concise way of writing the function above! So use this!
-    // for (let key in numbers){
-    //     numbersEls[key].innerText = numbers[key];
-    // }
 }

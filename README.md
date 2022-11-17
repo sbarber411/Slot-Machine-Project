@@ -1,8 +1,8 @@
 # Sophia Barber - Slot Machine
 
-## ☘️ Game Name: 
+## ☘️ Game Name: The Luck of the Irish - Slot Machine Game
 - - -
-The Luck of the Irish - Slot Machine Game
+https://sbarber411.github.io/Slot-Machine-Project/
 ![beginningSlot](startGame.png)
 - - -
 ## ☘️ Game Description:

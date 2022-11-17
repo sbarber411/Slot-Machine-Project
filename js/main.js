@@ -27,6 +27,7 @@ function getRandomItems(){
 	return items[randomItems]
 }
 
+
 // I will use this to select my buttons and allow the buttons to click
 const button = document.querySelector('#start');
 button.addEventListener('click', playSlot);

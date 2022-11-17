@@ -10,7 +10,7 @@ body {
   }
   
 h2, h3 {
-  color: green;
+  color: white;
 }
 
 #potsOfGold {
@@ -37,6 +37,7 @@ h2, h3 {
   align-items: center;
   padding: 10px 10px 10px 10px;
   color: red;
+  font-size: 100px;
 }
   
 button {

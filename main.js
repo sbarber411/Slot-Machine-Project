@@ -35,12 +35,12 @@ function playSlot(e){
     if ((potOfGold.potOfGold1 === potOfGold.potOfGold2) && (potOfGold.potOfGold3 === potOfGold.potOfGold1) && (potOfGold.potOfGold2 === potOfGold.potOfGold3)) {
         numbers.attempts +=1;
         console.log('WINNER OF ME COINS')
-        numbers.message = "You WON Me Coins!"
+        numbers.message = "You WON Me Coins! 💰"
         
             } else {
                 numbers.attempts +=1;
                 console.log('TRY AGAIN!')
-                numbers.message = "Try Again!"
+                numbers.message = "Ahh... try Again!"
     }
     render();
 }

@@ -1,8 +1,9 @@
 # Sophia Barber - Slot Machine
 
-## ☘️ Game Name: 
+## ☘️ Game Name: The Luck of the Irish - Slot Machine Game
 - - -
-The Luck of the Irish - Slot Machine Game
+Game-Link: https://sbarber411.github.io/Slot-Machine-Project/
+
 ![beginningSlot](startGame.png)
 - - -
 ## ☘️ Game Description:
@@ -20,7 +21,6 @@ When you win a round, it will look similar to this image.
 
 When you lose a round, it will look similar to this image.
 ![loseMachine](tryAgain.png)
-
 
 ## ☘️ Technologies Used:
 - - -

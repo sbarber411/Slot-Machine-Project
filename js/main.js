@@ -2,6 +2,9 @@
 // string emoji's that will be used for the slot machine game
 const items = ['🍀', '🌈', '🥇'];
 
+// then you have to define your variables so you can keep track of score, # times played and control the emohis shown
+let numbers;
+let potOfGold;
 
 // Cache Elements, "numbers" is my object and "attempts/message" are my keys
 // these are the elements I will be selecting that will change on my HTML
@@ -50,11 +53,6 @@ function playSlot(e){
     }
     render();
 }
-
-// then you have to define your variables so you can keep track of score, # times played and control the emohis shown
-let numbers;
-let potOfGold;
-
 
 //init function should be called when the page loads
 // or when we want to reset the game

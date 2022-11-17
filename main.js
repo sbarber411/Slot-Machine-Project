@@ -1,14 +1,17 @@
 
-// use this to select the values that will change every time they play
+// string emoji's that will be used for the slot machine game
 const items = ['🍀', '🌈', '🥇'];
 
 
-// CACHE ELS (ELEMENTS)
+// Cache Elements, "numbers" is my object and "attempts/message" are my keys
+// these are the elements I will be selecting that will change on my HTML
 const numbersEls = {
 	attempts: document.querySelector('#a-score'), 
     message: document.querySelector('#message'),
 }
-// use this to select all of the boxes
+
+// Cache Elements, gotPotsEls is my object and potOfGold1/2/3 are my keys
+// These are the elements that will update in 
 const goldPotsEls = {
     potOfGold1: document.querySelector('#potOfGold1'),
     potOfGold2: document.querySelector('#potOfGold2'),

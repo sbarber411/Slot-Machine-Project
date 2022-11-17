@@ -3,7 +3,7 @@
 ## ☘️ Game Name: 
 - - -
 The Luck of the Irish - Slot Machine Game
-![beginningSlot](Screen%20Shot%202022-11-16%20at%207.25.15%20PM.png)
+![beginningSlot](startGame.png)
 - - -
 ## ☘️ Game Description:
 - - -
@@ -16,10 +16,10 @@ The slot machine game was invented in 1891 and was introduced in Brooklyn, New Y
 ## ☘️ Screenshots of the Game:
 - - -
 When you win a round, it will look similar to this image. 
-![winMachine](Screen%20Shot%202022-11-16%20at%207.29.57%20PM.png)
+![winMachine](wonGame.png)
 
 When you lose a round, it will look similar to this image.
-![loseMachine](Screen%20Shot%202022-11-16%20at%206.31.51%20PM.png)
+![loseMachine](tryAgain.png)
 
 
 ## ☘️ Technologies Used:
